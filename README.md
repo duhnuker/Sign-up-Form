@@ -1,1 +1,2 @@
 # Sign-up-Form
+The goal of this project is to apply the knowledge I have gained thus far in order to create a simple form page. JavaScript will be implemented to verify passwords are matching in the form section.
