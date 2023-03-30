@@ -1,10 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .flex-container {
     display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image {
+    background-image: url(/home/duhnuker/Documents/repos/Sign-up-Form//image.jpg);
+    background-size: auto;
+    width: 100vw;
+    background-repeat: no-repeat;
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
+    min-height: auto;
+    margin-left: 50px;
+    margin-top: 100px;
 }
 
+.info {
+    background-color: antiquewhite;
+}
+
+.log {
+    background-color: antiquewhite;
+}
 
