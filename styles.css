@@ -11,25 +11,62 @@
 }
 
 .image {
-    background-image: url(/home/duhnuker/Documents/repos/Sign-up-Form//image.jpg);
-    background-size: auto;
-    width: 100vw;
+    background-image: url(/home/dinuka/repos/Sign-up-Form/image.jpg);
+    background-size: center;
+    width: 40vw;
     background-repeat: no-repeat;
 }
 
 .right-container {
     display: flex;
     flex-direction: column;
+    width: 60vw;
     min-height: auto;
-    margin-left: 50px;
-    margin-top: 100px;
 }
 
 .info {
-    background-color: antiquewhite;
+    background-color: lightgrey;
+    height: 40vh;
+}
+
+.form {
+    height: 20vh;
 }
 
 .log {
-    background-color: antiquewhite;
+    height: 40vh;
+    background-color: lightgrey;
 }
 
+.information {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 200px;
+    margin-right: 100px;
+}
+
+h1, .create-account, .button-text, .login {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.create-account {
+    background-color: #596D48;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 14px 46px;
+}
+
+.login {
+    color: #596D48;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
