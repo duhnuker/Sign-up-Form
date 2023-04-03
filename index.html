@@ -22,12 +22,40 @@
             You know you want to.
             </p>
         </div>
-        <div class="form">
+        <div class="form-container">
             <h1>Let's do this!</h1>
+                <form action="#">
+                    <div class="input">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                    <div class="input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="text" id="phone-number" name="phone-number" minlength="9" maxlength="9">
+                    </div>
+                    <div class="input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input">
+                        <label for="password-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </form>
+
+
         </div>
         <div class="log">
             <button class="create-account">Create Account</button>
-            <p class="button-text">Already have an account?<button class="login">Log in</button></p>
+            <p class="button-text">Already have an account? <button class="login" type="submit">Log in</button></p>
         </div>
     </div>
     

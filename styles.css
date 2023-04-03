@@ -6,49 +6,54 @@
 
 .flex-container {
     display: flex;
+    flex-flow: row wrap;
     width: 100vw;
     height: 100vh;
 }
 
+/*Left Side */
+
 .image {
-    background-image: url(/home/dinuka/repos/Sign-up-Form/image.jpg);
+    background-image: url(./image.jpg);
     background-size: center;
     width: 40vw;
     background-repeat: no-repeat;
 }
 
+/*Right Side*/
+
 .right-container {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: center;
     width: 60vw;
-    min-height: auto;
 }
 
 .info {
     background-color: lightgrey;
-    height: 40vh;
+    height: 50%;
+    padding-top: 10vh;
 }
 
-.form {
-    height: 20vh;
+.form-container {
+    padding-top: 2vh;
 }
 
 .log {
-    height: 40vh;
     background-color: lightgrey;
+    padding-top: 4vh;
+    height: 50%;
 }
 
 .information {
-    font-size: 20px;
+    display: flex;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-left: 50px;
-    margin-top: 200px;
-    margin-right: 100px;
+    min-width: 0;
 }
 
-h1, .create-account, .button-text, .login {
-    margin-left: 50px;
-    margin-top: 20px;
+.information, h1, .log {
+    padding-left: 3vw;
 }
 
 .create-account {
@@ -62,11 +67,20 @@ h1, .create-account, .button-text, .login {
 
 .login {
     color: #596D48;
-
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
+}
+
+.button-text {
+    margin-top: 4vh;
+}
+
+.input {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 3vw;
 }
