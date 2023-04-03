@@ -31,18 +31,21 @@
 
 .info {
     background-color: lightgrey;
-    height: 50%;
     padding-top: 10vh;
+    padding-bottom: 5vh;
+    height: 35%;
 }
 
 .form-container {
     padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: 30%;
 }
 
 .log {
     background-color: lightgrey;
     padding-top: 4vh;
-    height: 50%;
+    height: 35%;
 }
 
 .information {
@@ -83,4 +86,9 @@
     display: flex;
     flex-flow: column nowrap;
     padding-left: 3vw;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
 }
