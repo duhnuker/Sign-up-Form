@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,300&display=swap');
 
+:root {
+    --maintext-color: white;
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
-
+    color: var(--maintext-color);
 }
 
 .flex-container {
-    display: flex;
-    flex-flow: row wrap;
     width: 100vw;
     height: 100vh;
+}
+
+.flex-container, .logo {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 /*Left Side */
@@ -24,11 +31,8 @@
 
 .logo {
     background-color: black;
-    color: white;
     position: relative;
     top: 20vh;
-    display: flex;
-    flex-flow: row wrap;
     opacity: 30%;
 }
 
@@ -47,7 +51,6 @@
 
 .info {
     background-color: black;
-    color: white;
     padding-top: 10vh;
     padding-bottom: 5vh;
     height: 35%;
@@ -80,7 +83,6 @@
 
 .create-account {
     background-color: black;
-    color: white;
     font-size: 1em;
     font-weight: bold;
     border-radius: 12px;
@@ -94,27 +96,19 @@
     background-color: #04084C;
 }
 
-.login {
-    color: #126AC4;
-    font-size: 1.1em;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
-
 .button-text {
     margin-top: 3vh;
-    color: white;
     font-size: 0.9em;
 }
 
 .input {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     padding-left: 3vw;
+}
+
+input {
+    color: black;
 }
 
 input:focus {
@@ -128,7 +122,6 @@ form {
 
 label {
     font-size: 0.8em;
-    color: white;
     margin-bottom: 5px;
 }
 
@@ -136,5 +129,4 @@ h1 {
     font-size: 1.3em;
     font-weight: bold;
     margin-bottom: 2vh;
-    color: white;
 }
