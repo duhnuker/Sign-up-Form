@@ -79,17 +79,23 @@
 }
 
 .create-account {
-    background-color: #03063A;
+    background-color: black;
     color: white;
     font-size: 1em;
     font-weight: bold;
     border-radius: 12px;
     padding: 12px 30px;
-    border: none;
+    transition-duration: 0.4s;
+    border: solid;
+    border-width: 2px;
+}
+
+.create-account:hover {
+    background-color: #04084C;
 }
 
 .login {
-    color: lightblue;
+    color: #126AC4;
     font-size: 1.1em;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -123,6 +129,7 @@ form {
 label {
     font-size: 0.8em;
     color: white;
+    margin-bottom: 5px;
 }
 
 h1 {
