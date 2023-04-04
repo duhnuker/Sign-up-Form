@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,300&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+
 }
 
 .flex-container {
@@ -14,10 +18,8 @@
 /*Left Side */
 
 .image {
-    background-image: url(./image.jpg);
-    background-size: center;
+    background-image: url(./anna-tsukanova-unsplash.jpg);
     width: 40vw;
-    background-repeat: no-repeat;
 }
 
 /*Right Side*/
@@ -30,29 +32,32 @@
 }
 
 .info {
-    background-color: lightgrey;
+    background-color: black;
+    color: white;
     padding-top: 10vh;
     padding-bottom: 5vh;
     height: 35%;
 }
 
 .form-container {
-    padding-top: 2vh;
+    padding-top: 4vh;
     padding-bottom: 2vh;
     height: 30%;
+    background-color: #02052D;
 }
 
 .log {
-    background-color: lightgrey;
+    background-color: black;
     padding-top: 4vh;
     height: 35%;
 }
 
 .information {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     min-width: 0;
+    padding-right: 7vw;
 }
 
 .information, h1, .log {
@@ -60,7 +65,7 @@
 }
 
 .create-account {
-    background-color: #596D48;
+    background-color: rgba(28,110,164,0.84);
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -69,7 +74,8 @@
 }
 
 .login {
-    color: #596D48;
+    color: lightblue;
+    font-size: 1.1em;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -80,6 +86,7 @@
 
 .button-text {
     margin-top: 4vh;
+    color: white;
 }
 
 .input {
@@ -88,7 +95,23 @@
     padding-left: 3vw;
 }
 
+input:focus {
+    outline-color: rgba(28,110,164,0.84);
+}
+
 form {
     display: flex;
     flex-flow: row wrap;
+}
+
+label {
+    font-size: 0.8em;
+    color: white;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    color: white;
 }
